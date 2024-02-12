@@ -9,17 +9,17 @@ namespace api.Models
 {
     public class Tarea
     {
-        [Key]
+        //[Key]
         public Guid TareaId{set;get;}
-        [ForeignKey("CategoriaId")]
+        //[ForeignKey("CategoriaId")]
         public Guid CategoriaId{set;get;}
-        [Required]
-        [MaxLength(250)]
+        //[Required]
+        //[MaxLength(250)]
         public string Titulo{set;get;}
         public string Descripcion{set;get;}
         public Prioridad Prioridad{set;get;}
         public DateTime Fecha{set;get;}
-        [NotMapped]
+        //[NotMapped]
         public string Resumen{set;get;}
         public virtual Categoria Categoria{set;get;}
     }
